@@ -1,0 +1,37 @@
+@import "https://fonts.googleapis.com/css?family=Lato";
+@import "https://fonts.googleapis.com/css?family=Noto+Sans";
+@import "https://fonts.googleapis.com/css?family=Fira+Sans";
+
+img[src*="#small_center"] {
+  display: block;
+  margin: auto;
+  width: 15%;
+}
+
+img[src*="#center"] {
+  display: block;
+  margin: auto;
+  width: 75%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+a.navigation-title,
+a.navigation-link,
+section.container.page,
+.list ul li .title,
+* {
+  font-family: 
+    'Lato', 
+    'Noto Sans', 
+    'Fira Sans', 
+    -apple-system, 
+    BlinkMacSystemFont;
+}
+
