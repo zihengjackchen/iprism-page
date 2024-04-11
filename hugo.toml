@@ -1,5 +1,5 @@
 # Basic config
-baseURL = "https://example.com"
+baseURL = "http://www.zihengjackchen.com/iPrism"
 theme = "hugo-simple"
 languageCode = "en"                # zh-Hans
 title = "Hugo Simple"
@@ -41,8 +41,8 @@ hideMadeWithLine = false
 hideRSSLink = false
 customCSS = ["main.css"]
 [params.author]
-name = "Shaolong Chen"
-email = "shaolong.chen@outlook.it"
+name = "Ziheng (Jack) Chen"
+email = "zihengchen2000@gmail.com"
 
 [[menu.main]]
 name = "Home"
@@ -51,6 +51,10 @@ weight = 10
 [[menu.main]]
 name = "Blog"
 pageRef = "/blog"
+weight = 20
+[[menu.main]]
+name = "Home"
+pageRef = "www.zihengjackchen.com"
 weight = 20
 
 [services.rss]
