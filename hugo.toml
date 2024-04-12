@@ -1,5 +1,5 @@
 # Basic config
-baseURL = "http://www.zihengjackchen.com/iPrism"
+baseURL = "http://www.zihengjackchen.com/"
 theme = "hugo-simple"
 languageCode = "en"                # zh-Hans
 title = "Hugo Simple"
@@ -38,27 +38,29 @@ description = "Hugo Simple Demo"
 favicon = "images/favicon.png"
 dateFormat = "2006-01-02"
 hideMadeWithLine = false
-hideRSSLink = false
+hideRSSLink = true
 customCSS = ["main.css"]
 [params.author]
 name = "Ziheng (Jack) Chen"
 email = "zihengchen2000@gmail.com"
 
+
+
 [[menu.main]]
-name = "Home"
+name = "iPrism"
+pageRef = "/iPrism"
+weight = 10
+
+[[menu.main]]
+name = "OOD"
+pageRef = "/OOD"
+weight = 10
+
+[[menu.main]]
+name = "About"
 pageRef = "/"
 weight = 10
-[[menu.main]]
-name = "Blog"
-pageRef = "/blog"
-weight = 20
-[[menu.main]]
-name = "Home"
-pageRef = "www.zihengjackchen.com"
-weight = 20
 
-[services.rss]
-limit = 42
 
 [outputs]
 # Generate RSS for home only.
