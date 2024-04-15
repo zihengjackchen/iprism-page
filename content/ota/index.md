@@ -21,7 +21,7 @@ This project introduces a robust OOD Data Generation Pipeline specifically desig
 
 ### Result
 ### Selected Scenarios
-![risk](/OTA/scenarios.jpg)
+![risk](scenarios.jpg)
 - scen_front_accident.json
 - scen_ghost_cutin.json
 - scen_ghost_cutin_curved.json

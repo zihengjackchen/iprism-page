@@ -29,30 +29,30 @@ To effectively reduce the risks quantified by STI and prevent accidents, we also
 All resources associated with this study, including code, scenarios, and models, are available on [GitHub](https://github.com/zihengjackchen/iPrism).
 
 ### Motivating Example
-![risk](/iPrism/intro.jpg)
+![risk](intro.jpg)
 In a street scenario, an ego vehicle (AV) initially has multiple escape routes (highlighted in orange). However, when another vehicle abruptly cuts in front, these routes are blocked, increasing the risk of an accident. An illustration then shows the failure of the Autonomous Driving System (ADS) to respond, resulting in an accident and the loss of all escape routes. Finally, a depiction of the iPrism method, employing a reinforcement learning-based mitigation controller, demonstrates effective accident avoidance. By proactively braking, the ego vehicle opens new escape routes (in green), successfully circumventing the accident. This example highlights braking as the optimal action since changing lanes would eliminate the remaining escape routes.
 
 ## Quantifying Risk
 
 ### Calculating Reach Tube
-![risk](/iPrism/reach_tube_construction.gif)
+![risk](reach_tube_construction.gif)
 This is a bird-eye-view of the traffic where three blue cars are present. The potential states of the ego vehicle (represented as a dashed circle), starting with 0 velocity at the original position, is calculated iteratively in time steps following the bicycle model using sampled controls (accleration and steering). The reach tube is the bounding polygon of all the possible states. 
 
 ### Calculating Risks
-![Risk Calculation](/iPrism/risk_calculation.gif)
+![Risk Calculation](risk_calculation.gif)
 To calculate the risk of each actor, we first calculate the reach tube of the ego actor removing other actor one at a time, and finally removing all the other actors. 
 
-![Traffic Risk](/iPrism/full-approx.png)
+![Traffic Risk](full-approx.png)
 The risk of an actor posed on the ego actor is calculated counterfactually by the increase in reach tube when removing that actor. The scene risk is calculated by finding the increase in reach tube when removing all other vehicles. Risks are always normalized. This example can be found in the [GitHub repo](https://github.com/zihengjackchen/iPrism/STI-demo) as well. 
 
 ### STI in Action
-![Real-World](/iPrism/argoverse.gif)
+![Real-World](argoverse.gif)
 The above animation demonstrates the STI working in Argoverse, a real-world dataset. It shows the risk of other actors are inherently low.
 
 
 
 <p style="text-align: center;">
-  <img src="/iPrism/ghost_cutin.gif" alt="Ghost Cut-In" style="display: block; margin-left: auto; margin-right: auto; width: 75%;">
+  <img src="ghost_cutin.gif" alt="Ghost Cut-In" style="display: block; margin-left: auto; margin-right: auto; width: 75%;">
 </p>
 
 The above animation shows STI working in ghost-cutin. The risk of the actor was detected prior to the cutting motion.
