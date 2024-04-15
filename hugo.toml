@@ -1,6 +1,6 @@
 # Basic config
 baseURL = "http://www.zihengjackchen.com/"
-theme = "hugo-simple"
+theme = ["hugo-video", "hugo-simple"]
 languageCode = "en"                # zh-Hans
 title = "Hugo Simple"
 copyright = "© 2024 Ziheng (Jack) Chen"
@@ -47,17 +47,17 @@ email = "zihengchen2000@gmail.com"
 
 
 [[menu.main]]
-name = "iPrism"
+name = "iPrism: Risk Assessment and Mitigation"
 pageRef = "/iPrism"
 weight = 10
 
 [[menu.main]]
-name = "OTA"
+name = "OTA: Out-of-Distribution Testing Framework"
 pageRef = "/OTA"
 weight = 10
 
 [[menu.main]]
-name = "About"
+name = "Home"
 pageRef = "/"
 weight = 10
 
