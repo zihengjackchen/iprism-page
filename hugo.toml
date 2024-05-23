@@ -2,7 +2,7 @@
 baseURL = "https://zihengjackchen.github.io/"
 theme = ["hugo-video", "hugo-simple"]
 languageCode = "en"                # zh-Hans
-title = "iPrism"
+title = "iPrism: Characterize and Mitigate Risk by Quantifying Change in Escape Routes"
 copyright = "© 2024 Ziheng (Jack) Chen"
 
 # Generate a nice robots.txt for SEO
