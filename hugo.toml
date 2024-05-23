@@ -1,5 +1,5 @@
 # Basic config
-baseURL = "http://www.zihengjackchen.com/"
+baseURL = "https://zihengjackchen.github.io/iprism-page/"
 theme = ["hugo-video", "hugo-simple"]
 languageCode = "en"                # zh-Hans
 title = "Hugo Simple"
