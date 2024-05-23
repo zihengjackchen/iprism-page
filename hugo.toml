@@ -46,20 +46,6 @@ email = "zihengchen2000@gmail.com"
 
 
 
-[[menu.main]]
-name = "iPrism: Risk Assessment and Mitigation"
-pageRef = "/iPrism"
-weight = 10
-
-[[menu.main]]
-name = "OTA: Out-of-Distribution Testing Framework"
-pageRef = "/OTA"
-weight = 10
-
-[[menu.main]]
-name = "Home"
-pageRef = "/"
-weight = 10
 
 
 [outputs]
