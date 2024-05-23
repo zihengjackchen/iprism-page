@@ -1,3 +1,7 @@
+@import "https://fonts.googleapis.com/css?family=Lato";
+@import "https://fonts.googleapis.com/css?family=Noto+Sans";
+@import "https://fonts.googleapis.com/css?family=Fira+Sans";
+
 img[src*="#small_center"] {
   display: block;
   margin: auto;
@@ -10,31 +14,12 @@ img[src*="#center"] {
   width: 75%;
 }
 
-@import "https://fonts.googleapis.com/css?family=Lato";
-@import "https://fonts.googleapis.com/css?family=Noto+Sans";
-@import "https://fonts.googleapis.com/css?family=Fira+Sans";
-
 /* Global variables. */
-:root,
-::backdrop {
+* {
   /* Set sans-serif & mono fonts */
   --sans-font: 'Noto Sans', 'Fira Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --mono-font: monospace;
   --standard-border-radius: 5px;
-
-  /* Default (light) theme */
-  --bg: #fff;
-  --accent-bg: #f5f7ff;
-  --text: #212121;
-  --text-light: #585858;
-  --border: #898EA4;
-  --accent: #0d47a1;
-  --accent-hover: #1266e2;
-  --accent-text: var(--bg);
-  --code: #d81b60;
-  --preformatted: #444;
-  --marked: #ffdd33;
-  --disabled: #efefef;
 }
 
 /* Dark theme */
@@ -702,4 +687,8 @@ sub {
   border-radius: var(--standard-border-radius);
   padding: 1.5rem;
   margin: 2rem 0;
+}
+
+body{
+  grid-template-columns: 1fr min(55rem, 90%) 1fr;
 }
