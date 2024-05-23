@@ -11,7 +11,10 @@ toc = false
 
 ### Calculating Reach Tube
 ![risk](reach_tube_construction.gif)  
-This is a bird-eye-view of the traffic where three blue cars are present. The potential states of the ego vehicle (represented as a dashed circle), starting with 0 velocity at the original position, is calculated iteratively in time steps following the bicycle model using sampled controls (accleration and steering). The reach tube is the bounding polygon of all the possible states. 
+This is a bird-eye-view of the traffic where four cars are present. The bottom car is grayed out to signify that it is removed due to counterfactual reasoning. The initial state of the ego vehicle starting with 0 velocity is represented by a dashed circle at the original position. As time advances, possible potential states of the ego vehicle is calculated iteratively following the bicycle model using sampled controls (accleration and steering), which are represented using blue dots. 
+
+![Risk Calculation](colormapped.png) 
+After aggregating all possible states throughout time steps (color-coded for different steps), the reach tube is the bounding polygon of all the possible states, presented in light gray. 
 
 ### Calculating Risks
 ![Risk Calculation](risk_calculation.gif)  
@@ -21,16 +24,13 @@ To calculate the risk of each actor, we first calculate the reach tube of the eg
 The risk of an actor posed on the ego actor is calculated counterfactually by the increase in reach tube when removing that actor. The scene risk is calculated by finding the increase in reach tube when removing all other vehicles. Risks are always normalized. This example can be found in the [GitHub repo](https://github.com/zihengjackchen/iPrism/STI-demo) as well. 
 
 ### STI in Action
-![Real-World](argoverse.gif)  
-The above animation demonstrates the STI working in Argoverse, a real-world dataset. It shows the risk of other actors are inherently low.
-
-
-
 <p style="text-align: center;">
   <img src="ghost_cutin.gif" alt="Ghost Cut-In" style="display: block; margin-left: auto; margin-right: auto; width: 75%;">
 </p>
-
 The above animation shows STI working in ghost-cutin. The risk of the actor was detected prior to the cutting motion.
+
+![Real-World](argoverse.gif)  
+The above animation demonstrates that as a metric, STI also works in Argoverse, a real-world dataset. It shows the risk of other actors are inherently low.
 
 
 ### Results

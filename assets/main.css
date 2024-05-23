@@ -386,10 +386,9 @@ details[open] > :last-child {
   margin-bottom: 0;
 }
 
-/* Format tables */
 table {
   border-collapse: collapse;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto; /* Center the table */
 }
 
 figure > table {
