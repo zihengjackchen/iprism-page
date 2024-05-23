@@ -1,8 +1,8 @@
 # Basic config
-baseURL = "https://zihengjackchen.github.io/iprism-page/"
+baseURL = "https://zihengjackchen.github.io/"
 theme = ["hugo-video", "hugo-simple"]
 languageCode = "en"                # zh-Hans
-title = "Hugo Simple"
+title = "iPrism"
 copyright = "© 2024 Ziheng (Jack) Chen"
 
 # Generate a nice robots.txt for SEO
@@ -33,8 +33,8 @@ noClasses = true
 style = "catppuccin-mocha"
 
 [params]
-title = "Dependable AVs"
-description = "Open-Source Research Projects for Making Autonomous Vehicles Dependable"
+title = "iPrism"
+description = "Characterize and Mitigate Risk by Quantifying Change in Escape Routes"
 favicon = "images/favicon.png"
 dateFormat = "2006-01-02"
 hideMadeWithLine = false
