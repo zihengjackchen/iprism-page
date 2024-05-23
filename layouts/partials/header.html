@@ -1,5 +1,4 @@
-<nav>{{- partial "nav.html" . -}}</nav>
-
+<nav>{{ "" }}</nav>
 <h1>{{ .Title }}</h1>
 
 
@@ -18,6 +17,8 @@
   <a href="https://github.com/zihengjackchen/iPrism">GitHub (WIP)</a> |
   <a href="https://zenodo.org/doi/10.5281/zenodo.10279653">Artifact</a>
 </p>
+
+<nav>{{ partial "nav.html" . }}</nav>
 
 <!-- {{ with .Description }}
   <p>{{ . }}</p>

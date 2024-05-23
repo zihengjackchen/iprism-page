@@ -45,7 +45,18 @@ name = "Ziheng (Jack) Chen"
 email = "zihengchen2000@gmail.com"
 
 
-
+[[menu.main]]
+name = "Introduction"
+pageRef = "/"
+weight = 10
+[[menu.main]]
+name = "Quantifying Risk"
+pageRef = "/sti"
+weight = 20
+[[menu.main]]
+name = "Mitigating Risk"
+pageRef = "/smc"
+weight = 30
 
 
 [outputs]
