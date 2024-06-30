@@ -57,7 +57,10 @@ weight = 20
 name = "Mitigating Risk"
 pageRef = "/smc"
 weight = 30
-
+[[menu.main]]
+name = "DEPEND Bench"
+pageRef = "/dbench"
+weight = 40
 
 [outputs]
 # Generate RSS for home only.
