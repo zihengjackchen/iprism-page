@@ -35,7 +35,7 @@ style = "catppuccin-mocha"
 [params]
 title = "iPrism"
 description = "Characterize and Mitigate Risk by Quantifying Change in Escape Routes"
-favicon = "images/favicon.png"
+favicon = "images/favicon.ico"
 dateFormat = "2006-01-02"
 hideMadeWithLine = false
 hideRSSLink = true
